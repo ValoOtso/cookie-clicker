@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicker</title>
+    <link rel="stylesheet" href="css/tyylit.css">
+</head>
+<body>
+
+    <button id="aloita" onclick="aloita();ding()">Aloita</button>
+
+    <div id="peli">
+        <button id="keksinappi" onclick="ding()">
+            <img id="isokeksi" src="img/keksi2.png" alt="keksi" onclick="klikkaus()">
+        </button>
+        <div id="keksienmaara">
+            <p>Keksien määrä: </p>
+            <p id="keksit"></p>
+            <p id="keksiaSekunnissa"></p>
+        </div>
+        <div id="ostot">
+            <!--Extrat-->
+            <div id="extrat">
+                <!--kursori-->
+                <button class="tietokentta" id="kursori2" onclick="ostaExtraKursori1()">
+                    <span class="tietokenttateksti">
+                        <span>Kursorit ja klikkaukset ovat tuplasti tehokkaampia</span>
+                        <img id="pikkukeksi" src="img/keksi2.png" alt="pikkukeksi">
+                        <span class="hinta">100</span>
+                    </span>
+                    <img class="extranappi" src="img/kursori2.webp" alt="kursori2">
+                </button>
+                <button class="tietokentta" id="kursori3" onclick="ostaExtraKursori2()">
+                    <span class="tietokenttateksti">
+                        <span>Kursorit ja klikkaukset ovat tuplasti tehokkaampia</span><br>
+                        <img id="pikkukeksi" src="img/keksi2.png" alt="pikkukeksi">
+                        <span class="hinta">500</span>
+                    </span>
+                    <img class="extranappi" src="img/kursori3.webp" alt="kursori3">
+                </button>
+                <button class="tietokentta" id="kursori4" onclick="ostaExtraKursori3()">
+                    <span class="tietokenttateksti">
+                        <span>Kursorit ja klikkaukset ovat tuplasti tehokkaampia</span><br>
+                        <img id="pikkukeksi" src="img/keksi2.png" alt="pikkukeksi">
+                        <span class="hinta">10000</span>
+                    </span>
+                    <img class="extranappi" src="img/kursori4.webp" alt="kursori4">
+                </button>
+                <!--isoäiti-->
+                <button class="tietokentta" id="isoaiti2" onclick="ostaExtraIsoaiti1()">
+                    <span class="tietokenttateksti">
+                        <span>Isoäidit ovat tuplasti tehokkaampia</span><br>
+                        <img id="pikkukeksi" src="img/keksi2.png" alt="pikkukeksi">
+                        <span class="hinta">1000</span>
+                    </span>
+                    <img class="extranappi" src="img/isoaiti2.webp" alt="isoaiti2">
+                </button>
+                <button class="tietokentta" id="isoaiti3" onclick="ostaExtraIsoaiti2()">
+                    <span class="tietokenttateksti">
+                        <span>Isoäidit ovat tuplasti tehokkaampia</span><br>
+                        <img id="pikkukeksi" src="img/keksi2.png" alt="pikkukeksi">
+                        <span class="hinta">5000</span>
+                    </span>
+                    <img class="extranappi" src="img/isoaiti3.webp" alt="isoaiti3">
+                </button>
+                <button class="tietokentta" id="isoaiti4" onclick="ostaExtraIsoaiti3()">
+                    <span class="tietokenttateksti">
+                        <span>Isoäidit ovat tuplasti tehokkaampia</span><br>
+                        <img id="pikkukeksi" src="img/keksi2.png" alt="pikkukeksi">
+                        <span class="hinta">50000</span>
+                    </span>
+                    <img class="extranappi" src="img/isoaiti4.webp" alt="isoaiti4">
+                </button>
+                <!--maatila-->
+                <button class="tietokentta" id="maatila2" onclick="ostaExtraMaatila1()">
+                    <span class="tietokenttateksti">
+                        <span>Maatilat ovat tuplasti tehokkaampia</span><br>
+                        <img id="pikkukeksi" src="img/keksi2.png" alt="pikkukeksi">
+                        <span class="hinta">11000</span>
+                    </span>
+                    <img class="extranappi" src="img/maatila2.webp" alt="maatila2">
+                </button>
+                <button class="tietokentta" id="maatila3" onclick="ostaExtraMaatila2">
+                    <span class="tietokenttateksti">
+                        <span>Maatilat ovat tuplasti tehokkaampia</span><br>
+                        <img id="pikkukeksi" src="img/keksi2.png" alt="pikkukeksi">
+                        <span class="hinta">55000</span>
+                    </span>
+                    <img class="extranappi" src="img/maatila3.webp" alt="maatila3">
+                </button>
+                <button class="tietokentta" id="maatila4" onclick="ostaExtraMaatila3()">
+                    <span class="tietokenttateksti">
+                        <span>Maatilat ovat tuplasti tehokkaampia</span><br>
+                        <img id="pikkukeksi" src="img/keksi2.png" alt="pikkukeksi">
+                        <span class="hinta">550000</span>
+                    </span>
+                    <img class="extranappi" src="img/maatila4.webp" alt="maatila4">
+                </button>
+                <!--kaivos-->
+                <button class="tietokentta" id="kaivos2" onclick="ostaExtraKaivos1()">
+                    <span class="tietokenttateksti">
+                        <span>Kaivokset ovat tuplasti tehokkaampia</span><br>
+                        <img id="pikkukeksi" src="img/keksi2.png" alt="pikkukeksi">
+                        <span class="hinta">120000</span>
+                    </span>
+                    <img class="extranappi" src="img/kaivos2.webp" alt="kaivos2">
+                </button>
+                <button class="tietokentta" id="kaivos3" onclick="ostaExtraKaivos2()">
+                    <span class="tietokenttateksti">
+                        <span>Kaivokset ovat tuplasti tehokkaampia</span><br>
+                        <img id="pikkukeksi" src="img/keksi2.png" alt="pikkukeksi">
+                        <span class="hinta">600000</span>
+                    </span>
+                    <img class="extranappi" src="img/kaivos3.webp" alt="kaivos3">
+                </button>
+                <button class="tietokentta" id="kaivos4" onclick="ostaExtraKaivos3()">
+                    <span class="tietokenttateksti">
+                        <span>Kaivokset ovat tuplasti tehokkaampia</span><br>
+                        <img id="pikkukeksi" src="img/keksi2.png" alt="pikkukeksi">
+                        <span class="hinta">6000000</span>
+                    </span>
+                    <img class="extranappi" src="img/kaivos4.webp" alt="kaivos4">
+                </button>
+                <!--tehdas-->
+                <button class="tietokentta" id="tehdas2" onclick="ostaExtraTehdas1()">
+                    <span class="tietokenttateksti">
+                        <span>Tehtaat ovat tuplasti tehokkaampia</span><br>
+                        <img id="pikkukeksi" src="img/keksi2.png" alt="pikkukeksi">
+                        <span class="hinta">1300000</span>
+                    </span>
+                    <img class="extranappi" src="img/tehdas2.webp" alt="tehdas2">
+                </button>
+                <button class="tietokentta" id="tehdas3" onclick="ostaExtraTehdas2()">
+                    <span class="tietokenttateksti">
+                        <span>Tehtaat ovat tuplasti tehokkaampia</span><br>
+                        <img id="pikkukeksi" src="img/keksi2.png" alt="pikkukeksi">
+                        <span class="hinta">6500000</span>
+                    </span>
+                    <img class="extranappi" src="img/tehdas3.webp" alt="tehdas3">
+                </button>
+                <button class="tietokentta" id="tehdas4" onclick="ostaExtraTehdas3()">
+                    <span class="tietokenttateksti">
+                        <span>Tehtaat ovat tuplasti tehokkaampia</span><br>
+                        <img id="pikkukeksi" src="img/keksi2.png" alt="pikkukeksi">
+                        <span class="hinta">65000000</span>
+                    </span>
+                    <img class="extranappi" src="img/tehdas4.webp" alt="tehdas4">
+                </button>
+            </div>
+            <!--Kursori-->
+            <div class="tietokentta">
+                <button id="ostaKursori" class="osta" onclick="ostaKursori()">
+                    <img src="img/kursori.webp" alt="kursori" id="kursorikuva">
+                    <span class="tietokenttateksti">+0.1 keksiä sekunnissa</span>
+                    <div class="kursori">
+                        <span>Kursori</span><br>
+                        <img id="pikkukeksi" src="img/keksi2.png" alt="pikkukeksi">
+                        <span id="kursorinHinta"></span>
+                        <span id="kursorienMaara"></span>
+                    </div>
+                </button>
+            </div>
+            <!--Isoäiti-->
+            <div class="tietokentta">
+                <button id="ostaIsoaiti" class="osta" onclick="ostaIsoaiti()">
+                    <img src="img/isoaiti.webp" alt="isoaiti" id="isoaitikuva">
+                    <span class="tietokenttateksti">+1 keksi sekunnissa</span>
+                    <div class="isoaiti">
+                        <span>Isoäiti</span><br>
+                        <img id="pikkukeksi" src="img/keksi2.png" alt="pikkukeksi">
+                        <span id="isoaidinHinta"></span>
+                        <span id="isoaitienMaara"></span>
+                    </div>
+                </button>
+            </div>
+            <!--Maatila-->
+            <div class="tietokentta">
+                <button id="ostaMaatila" class="osta" onclick="ostaMaatila()">
+                    <img src="img/maatila.webp" alt="maatila" id="maatilakuva">
+                    <span class="tietokenttateksti">+8 keksiä sekunnissa</span>
+                    <div class="maatila">
+                        <span>Maatila</span><br>
+                        <img id="pikkukeksi" src="img/keksi2.png" alt="pikkukeksi">
+                        <span id="maatilanHinta"></span>
+                        <span id="maatilojenMaara"></span>
+                    </div>
+                </button>
+            </div>
+            <!--Kaivos-->
+            <div class="tietokentta">
+                <button id="ostaKaivos" class="osta" onclick="ostaKaivos()">
+                    <img src="img/kaivos.webp" alt="kaivos" id="kaivoskuva">
+                    <span class="tietokenttateksti">+47 keksiä sekunnissa</span>
+                    <div class="kaivos">
+                        <span>Kaivos</span><br>
+                        <img id="pikkukeksi" src="img/keksi2.png" alt="pikkukeksi">
+                        <span id="kaivoksenHinta"></span>
+                        <span id="kaivostenMaara"></span>
+                    </div>
+                </button>
+            </div>
+            <!--Tehdas-->
+            <div class="tietokentta">
+                <button id="ostaTehdas" class="osta" onclick="ostaTehdas()">
+                    <img src="img/tehdas.webp" alt="tehdas" id="tehdaskuva">
+                    <span class="tietokenttateksti">+260 keksiä sekunnissa</span>
+                    <div class="tehdas">
+                        <span>Tehdas</span><br>
+                        <img id="pikkukeksi" src="img/keksi2.png" alt="pikkukeksi">
+                        <span id="tehtaidenMaara"></span>
+                        <span id="tehtaanHinta"></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

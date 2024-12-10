@@ -1,0 +1,276 @@
+body {
+    background-image: url(../img/keksit.jpg);
+    margin: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border: solid rgb(65, 162, 241);
+    border-width: 10px;
+    overflow:hidden;
+    display:block;
+    box-sizing: border-box;
+}
+
+#extrat {
+    background-color: #451c04;
+    width: 360px;
+    height: 100px;
+}
+
+.extranappi {
+    width: 40px;
+    cursor: pointer;
+}
+
+#isokeksi {
+    width: 500px;
+    transition-duration: 0.2s;
+}
+
+#isokeksi:hover {
+    width: 520px;
+}
+
+#isokeksi:active {
+    width: 495px;
+    transition-duration: unset;
+}
+
+#keksinappi {
+    width: 550px;
+    height: 550px;
+    float: left;
+    background-color: blueviolet;
+    border: 10px solid #451c04;
+    padding: 5px;
+    cursor: pointer;
+    left: 23%;
+    position: absolute;
+    border-radius: 20px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+}
+
+#pikkukeksi {
+    width: 25px;
+}
+
+#ostot {
+    float: right;
+    position: absolute;
+    top: 50%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    border: 10px solid rgb(1, 134, 242);
+}
+
+#keksienmaara {
+    display: inline-block;
+    background-color: #451c04;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: antiquewhite;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+
+.kursori {
+    font-size: 30px;
+    padding: 20px;
+    width: 300px;
+}
+
+#ostaKursori {
+    border-radius: 20px;
+}
+
+#ostaKursori:hover {
+    cursor: pointer;
+}
+
+#kursorikuva {
+    width: 80px;
+    float: left;
+    margin-top: 15px;
+}
+
+#kursorienMaara {
+    float: right;
+}
+
+.isoaiti {
+    font-size: 30px;
+    padding: 20px;
+    width: 300px;
+}
+
+#ostaIsoaiti {
+    border-radius: 20px;
+}
+
+#ostaIsoaiti:hover {
+    cursor: pointer;
+}
+
+#isoaitikuva {
+    width: 80px;
+    float: left;
+    margin-top: 15px;
+}
+
+#isoaitienMaara {
+    float: right;
+}
+
+.maatila {
+    font-size: 30px;
+    padding: 20px;
+    width: 300px;
+}
+
+#ostaMaatila {
+    border-radius: 20px;
+}
+
+#ostaMaatila:hover {
+    cursor: pointer;
+}
+
+#maatilakuva {
+    width: 80px;
+    float: left;
+    margin-top: 15px;
+}
+
+#maatilojenMaara {
+    float: right;
+}
+
+.kaivos {
+    font-size: 30px;
+    padding: 20px;
+    width: 300px;
+}
+
+#ostaKaivos {
+    border-radius: 20px;
+}
+
+#ostaKaivos:hover {
+    cursor: pointer;
+}
+
+#kaivoskuva {
+    width: 80px;
+    float: left;
+    margin-top: 15px;
+}
+
+#kaivostenMaara {
+    float: right;
+}
+
+.tehdas {
+    font-size: 30px;
+    padding: 20px;
+    width: 300px;
+}
+
+#ostaTehdas {
+    border-radius: 20px;
+}
+
+#ostaTehdas:hover {
+    cursor: pointer;
+}
+
+#tehdaskuva {
+    width: 80px;
+    float: left;
+    margin-top: 15px;
+}
+
+#tehtaidenMaara {
+    float: right;
+}
+
+#aloita {
+    background-color: rgb(65, 162, 241);
+    color: white;
+    display: block;
+    font-size: 50px;
+    padding: 40px;
+    position: absolute;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+}
+
+#aloita:hover {
+    background-color: rgb(1, 134, 242);
+    color: white;
+    padding: 50px;
+    font-size: 60px;
+}
+
+.osta {
+    background-image: url(/img/puu.jpg);
+    font-weight: bolder;
+    color: antiquewhite;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.tietokentta {
+    position: relative;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tietokentta .tietokenttateksti {
+    visibility: hidden;
+    width: 200px;
+    background-color: black;
+    color: #fff;
+    border-radius: 6px;
+    padding: 20px;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    right: 110%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items:center;
+    color: chartreuse;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+
+
+  
+  .tietokentta .tietokenttateksti::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent black;
+  }
+  .tietokentta:hover .tietokenttateksti {
+    visibility: visible;
+  }
