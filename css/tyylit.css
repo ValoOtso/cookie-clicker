@@ -229,7 +229,7 @@ html,body{
 }
 
 .osta {
-    background-image: url(img/puu.jpg);
+    background-image: url('img/puu.jpg');
     font-weight: bolder;
     color: antiquewhite;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
