@@ -22,9 +22,6 @@ let keksiaSekunnissaMaatila = 0
 let keksiaSekunnissaKaivos = 0
 let keksiaSekunnissaTehdas = 0
 
-//Puutokset:
-//Keksiä sekunnissa ei toimi
-
 document.getElementById('keksit').innerHTML = Math.round(maara)
 document.getElementById('kursorinHinta').innerHTML = Math.round(kursorienHinta)
 document.getElementById('kursorienMaara').innerHTML = Math.round(kursorienMaara)
